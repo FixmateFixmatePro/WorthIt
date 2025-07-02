@@ -1,0 +1,68 @@
+import React from "react"; import { Button } from "@/components/ui/button"; import { Card, CardContent } from "@/components/ui/card"; import { Input } from "@/components/ui/input"; import Image from "next/image"; import logo from "@/assets/worthit-logo.png"; // Assuming the logo file is stored here
+
+export default function WorthItLanding() { return ( <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white px-6 py-12"> <div className="max-w-6xl mx-auto"> <header className="text-center mb-12"> <Image src={logo} alt="WorthIt Logo" width={160} height={160} className="mx-auto mb-4" /> <h1 className="text-4xl md:text-6xl font-bold mb-4">WorthIt</h1> <p className="text-lg md:text-xl text-gray-300"> Scan your stuff. Find out what it’s WorthIt. </p> <div className="mt-6"> <Input placeholder="Enter your email to get early access" className="max-w-md mx-auto" /> <Button className="mt-2">Join the Beta</Button> </div> </header>
+
+<section className="grid md:grid-cols-3 gap-6 text-left">
+      <Card>
+        <CardContent className="p-6">
+          <h2 className="text-xl font-semibold mb-2">📷 Barcode Scanner</h2>
+          <p>Scan any item using your phone camera. Instantly identify brand, product, and category.</p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-6">
+          <h2 className="text-xl font-semibold mb-2">📊 Market Value Engine</h2>
+          <p>Get live pricing across platforms like eBay, Amazon, and OfferUp. Know your item's real-time worth.</p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-6">
+          <h2 className="text-xl font-semibold mb-2">💸 Sell or Trade</h2>
+          <p>Choose to cash out or receive app credits to use in our exclusive marketplace.</p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-6">
+          <h2 className="text-xl font-semibold mb-2">🎁 Credit Ecosystem</h2>
+          <p>Earn and spend WorthCredits on exclusive deals, trades, and auctions inside the app.</p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-6">
+          <h2 className="text-xl font-semibold mb-2">📦 Product Wallet</h2>
+          <p>Track scanned items, values, trade-ins, and wishlists all in one place.</p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-6">
+          <h2 className="text-xl font-semibold mb-2">🔔 Smart Notifications</h2>
+          <p>Get alerts for value spikes, buyer interest, and special credit-only deals.</p>
+        </CardContent>
+      </Card>
+    </section>
+
+    <section className="mt-16 text-center">
+      <h3 className="text-2xl font-bold mb-4">Coming Features</h3>
+      <ul className="text-gray-300 space-y-2">
+        <li>🌟 Premium Credit Marketplace</li>
+        <li>⚡ Instant Payouts</li>
+        <li>🤖 AI Auto-Pricing & Trend Forecasting</li>
+        <li>📈 Bulk Scan Mode for Resellers</li>
+        <li>🛠 Verified Seller Profiles</li>
+      </ul>
+    </section>
+
+    <footer className="mt-20 text-center text-gray-500">
+      &copy; {new Date().getFullYear()} WorthIt. All rights reserved.
+    </footer>
+  </div>
+</div>
+
+); }
+
+          
